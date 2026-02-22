@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Weather.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <div class="tape"></div>
+        <header>
+          <i class='bx bx-left-arrow-alt back-btn'></i>
+          <span class="title">Weather App</span>
+        </header>
+
+        <div class="input-section">
+          <input id="city-input" type="text" placeholder="Enter City Name" />
+          <div class="divider">
+            <span>Or</span>
+          </div>
+          <button id="geo-btn">Get Device Location</button>
+        </div>
+        <!--  -->
+        <div class="result-section" style="display: none">
+          <i class="bx bxs-cloud-light rain icon-main"></i>
+          <h1 class="temp">29°C</h1>
+          <p class="description">Broken Clouds</p>
+          <div class="location">
+            <i class="bx bx-map"></i>
+            <span class="city-name">New York</span>
+          </div>
+          <div class="footer-stats">
+            <div class="stat-item">
+              <i class="bx bxs-thermometer"></i>
+              <div>
+                <span class="feels-like">36°C</span>
+                <p>Feel Like</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <i class="bx bxs-droplet"></i>
+              <div>
+                <span class="humidity">89%</span>
+                <p>Humidity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Weather.js"></script>
+  </body>
+</html>
